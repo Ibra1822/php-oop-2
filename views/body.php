@@ -15,13 +15,16 @@
               <p> Ingredients : <?php echo $item -> ingredients ?> </p>
               <p> Taste: <?php echo $item -> taste ?> </p>
               <p>Healthy:  <?php echo $item -> changeHealthy()  ?>  </p>
+              <h2><?php echo $item -> title ?></h2>
              <?php elseif(get_class($item) === 'Toy'): ?>
               <p>Dimesioni:  <?php echo $item -> size ?> </p>
               <p> Healthy: <?php  echo $item -> changeHealthy()  ?> </p>
+              <h2><?php echo $item -> title ?></h2>
                <?php elseif(get_class($item) === 'Sit'): ?>
               <p><?php  $item -> changeComfortable() ?> </p>
               <p>Dimesioni: <?php echo $item -> size ?> </p>
               <p> Razza : <?php echo $item -> race ?> </p>
+              <h2><?php echo $item -> title ?></h2>
               <?php endif; ?>
           </div>
         </div>
