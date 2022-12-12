@@ -22,49 +22,17 @@ $outDog = new Sit('Cleo','Zolia',new Category('Dog',true),70,'https://encrypted-
 
 $listCard = [$necon,$felix,$trixie,$zolia,$idMark,$outDog];
 
+
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<?php 
+require __DIR__ . '/Views/head.php';
 
-  <title>Pet Shop</title>
-  <style>
-    .ib-cont{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-    }
-  </style>
-</head>
-<body>
+require __DIR__ . '/Views/header.php';
 
-<div class="container ib-cont">
-      <?php foreach($listCard as $item): ?>
-
-     <div class="card ib-card mb-5 mt-5" style="width: 18rem;">
-       <img src="<?php echo $item -> image  ?>" class="card-img-top" alt="...">
-        <div class="card-body">
-        <h5 class="card-title"><?php echo $item -> name  ?></h5>
-        <p> <?php echo $item -> brand ?> </p>
-        <p> </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <?php endforeach; ?>
-  </div>
+require __DIR__ . '/Views/body.php';
+?>
 
 
-
-  
-</body>
-</html>

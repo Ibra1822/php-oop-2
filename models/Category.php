@@ -10,9 +10,9 @@
   }
 
   function addPic(){
-    if ($this -> type === 'dog') {
+    if ($this -> type === 'Dog') {
       $class =  'fa-solid fa-dog';
-    }else if ($this -> type === 'cat') {
+    }else if ($this -> type === 'Cat') {
       $class = 'fa-solid fa-cat';
     }else{
       $class = 'fa-solid fa-square-full';

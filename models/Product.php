@@ -22,3 +22,5 @@ $this -> image = $_image;
 
 
 }
+
+

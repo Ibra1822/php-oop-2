@@ -15,6 +15,7 @@ class Food extends Product {
     $this -> taste = $_taste;
     $this -> healthy = $_healthy;
     
+    
   }
 }  
 
