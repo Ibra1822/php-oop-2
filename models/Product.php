@@ -17,6 +17,7 @@ $this -> category = $_category;
 $this -> price = $_price;
 $this -> image = $_image;
 
+
 }
 
 
