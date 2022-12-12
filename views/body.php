@@ -14,12 +14,12 @@
               <p><?php echo $item -> weight ?> kg </p>
               <p> Ingredients : <?php echo $item -> ingredients ?> </p>
               <p> Taste: <?php echo $item -> taste ?> </p>
-              <p>Healthy:  <?php echo $item -> healthy ? 'Salutare' : 'Non Salutare'  ?>  </p>
+              <p>Healthy:  <?php echo $item -> changeHealthy()  ?>  </p>
              <?php elseif(get_class($item) === 'Toy'): ?>
               <p>Dimesioni:  <?php echo $item -> size ?> </p>
-              <p><?php echo $item -> healthy ? 'Salutare' : 'Non Salutare'  ?> </p>
+              <p> Healthy: <?php  echo $item -> changeHealthy()  ?> </p>
                <?php elseif(get_class($item) === 'Sit'): ?>
-              <p><?php echo $item -> comfortable ?'Comodo' : 'Non Comodo' ?> </p>
+              <p><?php  $item -> changeComfortable() ?> </p>
               <p>Dimesioni: <?php echo $item -> size ?> </p>
               <p> Razza : <?php echo $item -> race ?> </p>
               <?php endif; ?>

@@ -17,6 +17,17 @@ class Food extends Product {
     
     
   }
+
+  public function changeHealthy(){
+    if ($this -> healthy === true) {
+      return 'Salutare';
+    }elseif($this -> healthy === false){
+      return 'Non Salutare';
+    
+    }
+  }
+
+
 }  
 
 

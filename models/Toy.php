@@ -13,6 +13,15 @@ public function __construct($_name,$_brand, Category $_category,$_price,$_image,
   $this -> healthy = $_healthy;
 }
 
+public function changeHealthy(){
+  if ($this -> healthy === true) {
+    return 'Salutare';
+  }elseif($this -> healthy === false){
+    return 'Non Salutare';
+  
+  }
+}
+
 }
 
 ?>

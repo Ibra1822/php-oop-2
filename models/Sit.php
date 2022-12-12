@@ -14,7 +14,16 @@ $this -> size = $_size;
 $this -> race = $_race;
 }
 
+public function changeComfortable(){
+  if ($this -> comfortable === true) {
+    echo 'Comodo';
+  }elseif($this -> comfortable === false){
+    echo  'Non Comodo';
+
+  }
+
 }
 
+}
 
 ?>
